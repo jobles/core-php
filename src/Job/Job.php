@@ -29,7 +29,17 @@ final class Job
     /**
      * @var string
      */
-    private $salary;
+    private $salaryCurrencyCode;
+
+    /**
+     * @var string
+     */
+    private $salaryMin;
+
+    /**
+     * @var string
+     */
+    private $salaryMax;
 
     /**
      * @var string
@@ -160,18 +170,56 @@ final class Job
     /**
      * @return string
      */
-    public function getSalary()
+    public function getSalaryCurrencyCode()
     {
-        return $this->salary;
+        return $this->salaryCurrencyCode;
     }
 
     /**
-     * @param string $salary
+     * @param string $salaryCurrencyCode
      * @return Job
      */
-    public function setSalary($salary)
+    public function setSalaryCurrencyCode($salaryCurrencyCode)
     {
-        $this->salary = $salary;
+        $this->salaryCurrencyCode = $salaryCurrencyCode;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalaryMin()
+    {
+        return $this->salaryMin;
+    }
+
+    /**
+     * @param string $salaryMin
+     * @return Job
+     */
+    public function setSalaryMin($salaryMin)
+    {
+        $this->salaryMin = $salaryMin;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalaryMax()
+    {
+        return $this->salaryMax;
+    }
+
+    /**
+     * @param string $salaryMax
+     * @return Job
+     */
+    public function setSalaryMax($salaryMax)
+    {
+        $this->salaryMax = $salaryMax;
 
         return $this;
     }
