@@ -2,7 +2,7 @@
   "name": "jobles/core-php",
   "description": "Jobl.es core PHP library",
   "type": "library",
-  "license": "proprietary",
+  "license": "MIT",
   "minimum-stability": "stable",
   "homepage": "https://github.com/jobles/core-php",
   "support": {
