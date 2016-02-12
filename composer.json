@@ -1,0 +1,26 @@
+{
+  "name": "jobles/core-php",
+  "description": "Jobl.es core PHP library",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "homepage": "https://github.com/jobles/core-php",
+  "support": {
+    "issues": "https://github.com/jobles/core-php/issues"
+  },
+  "authors": [
+    {
+      "name": "Jobl.es Developers",
+      "email": "contact@jobl.es",
+      "homepage": "http://jobl.es"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jobles\\Core\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.5"
+  }
+}
