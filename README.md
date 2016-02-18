@@ -6,3 +6,5 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/jobles/core-php/badge.svg?branch=master)](https://coveralls.io/github/jobles/core-php?branch=master)
 [![Build Status](https://travis-ci.org/jobles/core-php.svg?branch=master)](https://travis-ci.org/jobles/core-php)
+
+[![Packagist](https://img.shields.io/packagist/dt/jobles/core-php.svg)]()

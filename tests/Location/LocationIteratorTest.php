@@ -2,7 +2,6 @@
 
 namespace Jobles\Tests\Core\Location;
 
-use Jobles\Core\Location\Location;
 use Jobles\Core\Location\LocationCollection;
 use Jobles\Core\Location\LocationIterator;
 use Jobles\Core\Location\LocationWithState;
