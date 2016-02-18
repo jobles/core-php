@@ -8,3 +8,4 @@
 [![Build Status](https://travis-ci.org/jobles/core-php.svg?branch=master)](https://travis-ci.org/jobles/core-php)
 
 [![Packagist](https://img.shields.io/packagist/dt/jobles/core-php.svg)]()
+[![Packagist](https://img.shields.io/packagist/v/jobles/core-php.svg)]()
