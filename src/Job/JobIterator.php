@@ -48,7 +48,7 @@ class JobIterator implements \Iterator, \Countable
      */
     public function valid()
     {
-        return $this->position < $this->jobs->count();
+        return $this->position < $this->count();
     }
 
     /**
@@ -64,6 +64,6 @@ class JobIterator implements \Iterator, \Countable
      */
     public function count()
     {
-        return $this->jobs->count();
+        return count($this->jobs);
     }
 }
