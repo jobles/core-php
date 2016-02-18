@@ -9,3 +9,5 @@
 
 [![Packagist](https://img.shields.io/packagist/dt/jobles/core-php.svg)]()
 [![Packagist](https://img.shields.io/packagist/v/jobles/core-php.svg)]()
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/86629b76-647c-4147-adf8-cb6d3a240e19/small.png)](https://insight.sensiolabs.com/projects/86629b76-647c-4147-adf8-cb6d3a240e19)
