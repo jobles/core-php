@@ -26,10 +26,15 @@ class JobCollection implements \IteratorAggregate, \Countable
     /**
      * @param $position
      * @return Job
+     * @throws \LengthException
      */
     public function pick($position)
     {
-        return $this->jobs[$position];
+        if (isset($this->jobs[$position])) {
+            return $this->jobs[$position];
+        }
+
+        throw new \LengthException('Invalid job position: ' . $position);
     }
 
     /**
