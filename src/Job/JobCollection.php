@@ -24,11 +24,11 @@ class JobCollection implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @param $position
+     * @param int $position
      * @return Job
      * @throws \LengthException
      */
-    public function pick($position)
+    public function pick(int $position) : Job
     {
         if (isset($this->jobs[$position])) {
             return $this->jobs[$position];
@@ -38,17 +38,17 @@ class JobCollection implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function count()
+    public function count() : int
     {
         return $this->size;
     }
 
     /**
-     * @inheritDoc
+     * @return JobIterator
      */
-    public function getIterator()
+    public function getIterator() : JobIterator
     {
         return new JobIterator($this);
     }

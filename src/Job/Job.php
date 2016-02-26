@@ -94,7 +94,7 @@ final class Job
     /**
      * @return string
      */
-    public function getKey()
+    public function getKey() : string
     {
         return $this->key;
     }
@@ -103,7 +103,7 @@ final class Job
      * @param string $key
      * @return Job
      */
-    public function setKey($key)
+    public function setKey(string $key)
     {
         $this->key = $key;
 
@@ -113,7 +113,7 @@ final class Job
     /**
      * @return Index
      */
-    public function getIndex()
+    public function getIndex() : Index
     {
         return $this->index;
     }
@@ -122,7 +122,7 @@ final class Job
      * @param Index $index
      * @return Job
      */
-    public function setIndex(Index $index)
+    public function setIndex(Index $index) : Job
     {
         $this->index = $index;
 
@@ -132,7 +132,7 @@ final class Job
     /**
      * @return string
      */
-    public function getTitle()
+    public function getTitle() : string
     {
         return $this->title;
     }
@@ -141,7 +141,7 @@ final class Job
      * @param string $title
      * @return Job
      */
-    public function setTitle($title)
+    public function setTitle(string $title) : Job
     {
         $this->title = $title;
 
@@ -151,7 +151,7 @@ final class Job
     /**
      * @return string
      */
-    public function getCompany()
+    public function getCompany() : string
     {
         return $this->company;
     }
@@ -160,7 +160,7 @@ final class Job
      * @param string $company
      * @return Job
      */
-    public function setCompany($company)
+    public function setCompany(string $company) : Job
     {
         $this->company = $company;
 
@@ -170,7 +170,7 @@ final class Job
     /**
      * @return string
      */
-    public function getSalaryCurrencyCode()
+    public function getSalaryCurrencyCode() : string
     {
         return $this->salaryCurrencyCode;
     }
@@ -179,7 +179,7 @@ final class Job
      * @param string $salaryCurrencyCode
      * @return Job
      */
-    public function setSalaryCurrencyCode($salaryCurrencyCode)
+    public function setSalaryCurrencyCode(string $salaryCurrencyCode) : Job
     {
         $this->salaryCurrencyCode = $salaryCurrencyCode;
 
@@ -189,7 +189,7 @@ final class Job
     /**
      * @return string
      */
-    public function getSalaryMin()
+    public function getSalaryMin() : string
     {
         return $this->salaryMin;
     }
@@ -198,7 +198,7 @@ final class Job
      * @param string $salaryMin
      * @return Job
      */
-    public function setSalaryMin($salaryMin)
+    public function setSalaryMin(string $salaryMin) : Job
     {
         $this->salaryMin = $salaryMin;
 
@@ -208,7 +208,7 @@ final class Job
     /**
      * @return string
      */
-    public function getSalaryMax()
+    public function getSalaryMax() : string
     {
         return $this->salaryMax;
     }
@@ -217,7 +217,7 @@ final class Job
      * @param string $salaryMax
      * @return Job
      */
-    public function setSalaryMax($salaryMax)
+    public function setSalaryMax(string $salaryMax) : Job
     {
         $this->salaryMax = $salaryMax;
 
@@ -227,7 +227,7 @@ final class Job
     /**
      * @return string
      */
-    public function getCity()
+    public function getCity() : string
     {
         return $this->city;
     }
@@ -236,7 +236,7 @@ final class Job
      * @param string $city
      * @return Job
      */
-    public function setCity($city)
+    public function setCity(string $city) : Job
     {
         $this->city = $city;
 
@@ -246,7 +246,7 @@ final class Job
     /**
      * @return string
      */
-    public function getState()
+    public function getState() : string
     {
         return $this->state;
     }
@@ -255,7 +255,7 @@ final class Job
      * @param string $state
      * @return Job
      */
-    public function setState($state)
+    public function setState(string $state) : Job
     {
         $this->state = $state;
 
@@ -265,7 +265,7 @@ final class Job
     /**
      * @return string
      */
-    public function getCountry()
+    public function getCountry() : string
     {
         return $this->country;
     }
@@ -274,7 +274,7 @@ final class Job
      * @param string $country
      * @return Job
      */
-    public function setCountry($country)
+    public function setCountry(string $country) : Job
     {
         $this->country = $country;
 
@@ -284,7 +284,7 @@ final class Job
     /**
      * @return string
      */
-    public function getSource()
+    public function getSource() : string
     {
         return $this->source;
     }
@@ -293,7 +293,7 @@ final class Job
      * @param string $source
      * @return Job
      */
-    public function setSource($source)
+    public function setSource(string $source) : Job
     {
         $this->source = $source;
 
@@ -303,7 +303,7 @@ final class Job
     /**
      * @return \DateTime
      */
-    public function getDate()
+    public function getDate() : \DateTime
     {
         return $this->date;
     }
@@ -312,7 +312,7 @@ final class Job
      * @param \DateTime $date
      * @return Job
      */
-    public function setDate(\DateTime $date)
+    public function setDate(\DateTime $date) : Job
     {
         $this->date = $date;
 
@@ -322,7 +322,7 @@ final class Job
     /**
      * @return string
      */
-    public function getSnippet()
+    public function getSnippet() : string
     {
         return $this->snippet;
     }
@@ -331,7 +331,7 @@ final class Job
      * @param string $snippet
      * @return Job
      */
-    public function setSnippet($snippet)
+    public function setSnippet(string $snippet) : Job
     {
         $this->snippet = $snippet;
 
@@ -341,7 +341,7 @@ final class Job
     /**
      * @return string
      */
-    public function getDescription()
+    public function getDescription() : string
     {
         return $this->description;
     }
@@ -350,7 +350,7 @@ final class Job
      * @param string $description
      * @return Job
      */
-    public function setDescription($description)
+    public function setDescription(string $description) : Job
     {
         $this->description = $description;
 
@@ -360,7 +360,7 @@ final class Job
     /**
      * @return string
      */
-    public function getViewUrl()
+    public function getViewUrl() : string
     {
         return $this->viewUrl;
     }
@@ -369,7 +369,7 @@ final class Job
      * @param string $viewUrl
      * @return Job
      */
-    public function setViewUrl($viewUrl)
+    public function setViewUrl(string $viewUrl) : Job
     {
         $this->viewUrl = $viewUrl;
 
@@ -379,7 +379,7 @@ final class Job
     /**
      * @return string
      */
-    public function getApplyUrl()
+    public function getApplyUrl() : string
     {
         return $this->applyUrl;
     }
@@ -388,7 +388,7 @@ final class Job
      * @param string $applyUrl
      * @return Job
      */
-    public function setApplyUrl($applyUrl)
+    public function setApplyUrl(string $applyUrl) : Job
     {
         $this->applyUrl = $applyUrl;
 
@@ -398,16 +398,16 @@ final class Job
     /**
      * @return boolean
      */
-    public function isFeatured()
+    public function isFeatured() : bool
     {
         return $this->featured;
     }
 
     /**
-     * @param boolean $featured
+     * @param bool $featured
      * @return Job
      */
-    public function setFeatured($featured)
+    public function setFeatured(bool $featured) : Job
     {
         $this->featured = $featured;
 

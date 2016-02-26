@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobles\Core;
+namespace Jobles\Core\Exception;
 
 class JoblesException extends \Exception
 {

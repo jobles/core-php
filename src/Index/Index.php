@@ -24,7 +24,7 @@ final class Index
      */
     private $affiliateId;
 
-    public function __construct($key, $name, $url, $affiliateId)
+    public function __construct(string $key, string $name, string $url, string $affiliateId)
     {
         $this->key = $key;
         $this->name = $name;

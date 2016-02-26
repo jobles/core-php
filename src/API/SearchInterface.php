@@ -10,5 +10,5 @@ interface SearchInterface
      * @param array $filters
      * @return JobCollection
      */
-    public function search(array $filters);
+    public function search(array $filters) : JobCollection;
 }

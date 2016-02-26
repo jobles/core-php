@@ -7,5 +7,5 @@ interface LocationInterface
     /**
      * @return string
      */
-    public function getLocation();
+    public function getLocation() : string;
 }
