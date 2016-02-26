@@ -20,9 +20,9 @@ class JobIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return Job
      */
-    public function current()
+    public function current() : Job
     {
         return $this->jobs->pick($this->position);
     }
@@ -36,17 +36,17 @@ class JobIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function key()
+    public function key() : int
     {
         return $this->position;
     }
 
     /**
-     * @inheritDoc
+     * @return bool
      */
-    public function valid()
+    public function valid() : bool
     {
         return $this->position < $this->count();
     }
@@ -60,9 +60,9 @@ class JobIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function count()
+    public function count() : int
     {
         return count($this->jobs);
     }

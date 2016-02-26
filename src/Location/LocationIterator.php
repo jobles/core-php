@@ -22,7 +22,7 @@ class LocationIterator implements \Iterator, \Countable
     /**
      * @inheritDoc
      */
-    public function current()
+    public function current() : LocationInterface
     {
         return $this->locations->pick($this->position);
     }
@@ -36,17 +36,17 @@ class LocationIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function key()
+    public function key() : int
     {
         return $this->position;
     }
 
     /**
-     * @inheritDoc
+     * @return bool
      */
-    public function valid()
+    public function valid() : bool
     {
         return $this->position < $this->locations->count();
     }
@@ -60,9 +60,9 @@ class LocationIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function count()
+    public function count() : int
     {
         return $this->locations->count();
     }

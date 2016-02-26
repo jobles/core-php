@@ -22,7 +22,7 @@ class LocationWithStateAndCity extends LocationWithState implements LocationInte
     /**
      * @return string
      */
-    public function getCity()
+    public function getCity() : string
     {
         return $this->city;
     }
@@ -32,7 +32,7 @@ class LocationWithStateAndCity extends LocationWithState implements LocationInte
     /**
      * @return string
      */
-    public function getLocation()
+    public function getLocation() : string
     {
         return $this->city . ' - ' . parent::getLocation();
     }

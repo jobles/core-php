@@ -19,7 +19,7 @@ class Location implements LocationInterface
     /**
      * @return CountryInterface
      */
-    public function getCountry()
+    public function getCountry() : CountryInterface
     {
         return $this->country;
     }
@@ -29,7 +29,7 @@ class Location implements LocationInterface
     /**
      * @return string
      */
-    public function getLocation()
+    public function getLocation() : string
     {
         return $this->country->getAlpha2Code();
     }

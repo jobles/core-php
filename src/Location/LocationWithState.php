@@ -22,7 +22,7 @@ class LocationWithState extends Location implements LocationInterface
     /**
      * @return SubdivisionInterface
      */
-    public function getState()
+    public function getState() : SubdivisionInterface
     {
         return $this->state;
     }
@@ -32,7 +32,7 @@ class LocationWithState extends Location implements LocationInterface
     /**
      * @return string
      */
-    public function getLocation()
+    public function getLocation() : string
     {
         return $this->state->getCode();
     }

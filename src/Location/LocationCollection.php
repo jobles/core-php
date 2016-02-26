@@ -15,20 +15,20 @@ class LocationCollection implements \IteratorAggregate, \Countable
     private $size = 0;
 
     /**
-     * @param Location $location
+     * @param LocationInterface $location
      */
-    public function addLocation(Location $location)
+    public function addLocation(LocationInterface $location)
     {
         $this->locations[] = $location;
         $this->size++;
     }
 
     /**
-     * @param $position
+     * @param int $position
      * @return LocationInterface
      * @throws \LengthException
      */
-    public function pick($position)
+    public function pick(int $position) : LocationInterface
     {
         if (isset($this->locations[$position])) {
             return $this->locations[$position];
@@ -38,17 +38,17 @@ class LocationCollection implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @inheritDoc
+     * @return int
      */
-    public function count()
+    public function count() : int
     {
         return $this->size;
     }
 
     /**
-     * @inheritDoc
+     * @return LocationIterator
      */
-    public function getIterator()
+    public function getIterator() : LocationIterator
     {
         return new LocationIterator($this);
     }
