@@ -44,12 +44,12 @@ final class Job
     /**
      * @var string
      */
-    private $city;
+    private $city = '';
 
     /**
      * @var string
      */
-    private $state;
+    private $state = '';
 
     /**
      * @var string
