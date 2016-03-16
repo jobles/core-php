@@ -35,6 +35,28 @@ class JobTest extends \PHPUnit_Framework_TestCase
         $this->job->setFeatured(false);
     }
 
+    public function testDefaultValuesOfNewInstance()
+    {
+        $this->job = new Job;
+        $this->assertEquals('', $this->job->getKey());
+        $this->assertInstanceOf('Jobles\Core\Index\Index', $this->job->getIndex());
+        $this->assertEquals('', $this->job->getTitle());
+        $this->assertEquals('', $this->job->getCompany());
+        $this->assertEquals('', $this->job->getSalaryCurrencyCode());
+        $this->assertEquals(0, $this->job->getSalaryMin());
+        $this->assertEquals(0, $this->job->getSalaryMax());
+        $this->assertEquals('', $this->job->getCity());
+        $this->assertEquals('', $this->job->getState());
+        $this->assertEquals('', $this->job->getCountry());
+        $this->assertEquals('', $this->job->getSource());
+        $this->assertInstanceOf('DateTime', $this->job->getDate());
+        $this->assertEquals('', $this->job->getSnippet());
+        $this->assertEquals('', $this->job->getDescription());
+        $this->assertEquals('', $this->job->getViewUrl());
+        $this->assertEquals('', $this->job->getApplyUrl());
+        $this->assertFalse($this->job->isFeatured());
+    }
+
     public function testGetKey()
     {
         $this->assertEquals('job_key', $this->job->getKey());

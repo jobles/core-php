@@ -10,57 +10,57 @@ final class Job
     /**
      * @var string
      */
-    private $key = '';
+    private $key;
 
     /**
      * @var Index
      */
-    private $index = '';
+    private $index;
 
     /**
      * @var string
      */
-    private $title = '';
+    private $title;
 
     /**
      * @var string
      */
-    private $company = '';
+    private $company;
 
     /**
      * @var string
      */
-    private $salaryCurrencyCode = '';
+    private $salaryCurrencyCode;
 
     /**
-     * @var string
+     * @var float
      */
     private $salaryMin;
 
     /**
-     * @var string
+     * @var float
      */
     private $salaryMax;
 
     /**
      * @var string
      */
-    private $city = '';
+    private $city;
 
     /**
      * @var string
      */
-    private $state = '';
+    private $state;
 
     /**
      * @var string
      */
-    private $country = '';
+    private $country;
 
     /**
      * @var string
      */
-    private $source = '';
+    private $source;
 
     /**
      * @var \DateTime
@@ -70,27 +70,48 @@ final class Job
     /**
      * @var string
      */
-    private $snippet = '';
+    private $snippet;
 
     /**
      * @var string
      */
-    private $description = '';
+    private $description;
 
     /**
      * @var string
      */
-    private $viewUrl = '';
+    private $viewUrl;
 
     /**
      * @var string
      */
-    private $applyUrl = '';
+    private $applyUrl;
 
     /**
      * @var bool
      */
-    private $featured = false;
+    private $featured;
+
+    public function __construct()
+    {
+        $this->key = '';
+        $this->index = new Index('', '', '', '');
+        $this->title = '';
+        $this->company = '';
+        $this->salaryCurrencyCode = '';
+        $this->salaryMin = 0;
+        $this->salaryMax = 0;
+        $this->city = '';
+        $this->state = '';
+        $this->country = '';
+        $this->source = '';
+        $this->date = new \DateTime;
+        $this->snippet = '';
+        $this->description = '';
+        $this->viewUrl = '';
+        $this->applyUrl = '';
+        $this->featured = false;
+    }
 
     /**
      * @return string
