@@ -10,27 +10,27 @@ final class Job
     /**
      * @var string
      */
-    private $key;
+    private $key = '';
 
     /**
      * @var Index
      */
-    private $index;
+    private $index = '';
 
     /**
      * @var string
      */
-    private $title;
+    private $title = '';
 
     /**
      * @var string
      */
-    private $company;
+    private $company = '';
 
     /**
      * @var string
      */
-    private $salaryCurrencyCode;
+    private $salaryCurrencyCode = '';
 
     /**
      * @var string
@@ -55,12 +55,12 @@ final class Job
     /**
      * @var string
      */
-    private $country;
+    private $country = '';
 
     /**
      * @var string
      */
-    private $source;
+    private $source = '';
 
     /**
      * @var \DateTime
@@ -70,27 +70,27 @@ final class Job
     /**
      * @var string
      */
-    private $snippet;
+    private $snippet = '';
 
     /**
      * @var string
      */
-    private $description;
+    private $description = '';
 
     /**
      * @var string
      */
-    private $viewUrl;
+    private $viewUrl = '';
 
     /**
      * @var string
      */
-    private $applyUrl;
+    private $applyUrl = '';
 
     /**
      * @var bool
      */
-    private $featured;
+    private $featured = false;
 
     /**
      * @return string
