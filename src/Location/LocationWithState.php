@@ -7,6 +7,7 @@ use Phine\Country\SubdivisionInterface;
 
 class LocationWithState extends Location implements LocationInterface
 {
+
     /**
      * @var SubdivisionInterface
      */

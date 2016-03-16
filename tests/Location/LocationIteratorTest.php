@@ -10,6 +10,7 @@ use Phine\Country\Subdivision;
 
 class LocationIteratorTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var LocationIterator
      */

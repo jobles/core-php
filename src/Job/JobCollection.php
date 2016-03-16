@@ -4,6 +4,7 @@ namespace Jobles\Core\Job;
 
 class JobCollection implements \IteratorAggregate, \Countable
 {
+
     /**
      * @var array
      */
@@ -25,6 +26,7 @@ class JobCollection implements \IteratorAggregate, \Countable
 
     /**
      * @param int $position
+     *
      * @return Job
      * @throws \LengthException
      */

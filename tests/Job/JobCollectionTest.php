@@ -8,6 +8,7 @@ use Jobles\Core\Job\JobIterator;
 
 class JobCollectionTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var JobCollection
      */

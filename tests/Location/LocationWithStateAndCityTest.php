@@ -8,6 +8,7 @@ use Phine\Country\Subdivision;
 
 class LocationWithStateAndCityTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var LocationWithStateAndCity
      */

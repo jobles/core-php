@@ -4,6 +4,7 @@ namespace Jobles\Core\Location;
 
 class LocationCollection implements \IteratorAggregate, \Countable
 {
+
     /**
      * @var array
      */
@@ -25,6 +26,7 @@ class LocationCollection implements \IteratorAggregate, \Countable
 
     /**
      * @param int $position
+     *
      * @return LocationInterface
      * @throws \LengthException
      */

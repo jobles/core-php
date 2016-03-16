@@ -9,6 +9,7 @@ use Phine\Country\SubdivisionInterface;
 
 class LocationWithStateTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var LocationWithState
      */

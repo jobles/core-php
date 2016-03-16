@@ -4,6 +4,7 @@ namespace Jobles\Core\Job;
 
 class JobIterator implements \Iterator, \Countable
 {
+
     /**
      * @var int
      */
@@ -52,18 +53,18 @@ class JobIterator implements \Iterator, \Countable
     }
 
     /**
-     * @inheritDoc
-     */
-    public function rewind()
-    {
-        $this->position = 0;
-    }
-
-    /**
      * @return int
      */
     public function count() : int
     {
         return count($this->jobs);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function rewind()
+    {
+        $this->position = 0;
     }
 }

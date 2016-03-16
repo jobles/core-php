@@ -6,6 +6,7 @@ use Jobles\Core\Index\Index;
 
 class IndexTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var Index
      */

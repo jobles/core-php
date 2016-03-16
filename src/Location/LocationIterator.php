@@ -4,6 +4,7 @@ namespace Jobles\Core\Location;
 
 class LocationIterator implements \Iterator, \Countable
 {
+
     /**
      * @var int
      */

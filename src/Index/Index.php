@@ -4,6 +4,7 @@ namespace Jobles\Core\Index;
 
 final class Index
 {
+
     /**
      * @var string
      */

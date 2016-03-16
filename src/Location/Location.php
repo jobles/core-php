@@ -6,6 +6,7 @@ use Phine\Country\CountryInterface;
 
 class Location implements LocationInterface
 {
+
     /**
      * @var CountryInterface
      */

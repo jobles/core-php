@@ -9,6 +9,7 @@ use Phine\Country\Country;
 
 class LocationCollectionTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var LocationCollection
      */

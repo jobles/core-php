@@ -7,6 +7,7 @@ use Jobles\Core\Job\Job;
 
 class JobTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @var Job
      */

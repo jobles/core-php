@@ -6,6 +6,7 @@ use Jobles\Core\Index\Index;
 
 final class Job
 {
+
     /**
      * @var string
      */
@@ -101,6 +102,7 @@ final class Job
 
     /**
      * @param string $key
+     *
      * @return Job
      */
     public function setKey(string $key)
@@ -120,6 +122,7 @@ final class Job
 
     /**
      * @param Index $index
+     *
      * @return Job
      */
     public function setIndex(Index $index) : Job
@@ -139,6 +142,7 @@ final class Job
 
     /**
      * @param string $title
+     *
      * @return Job
      */
     public function setTitle(string $title) : Job
@@ -158,6 +162,7 @@ final class Job
 
     /**
      * @param string $company
+     *
      * @return Job
      */
     public function setCompany(string $company) : Job
@@ -177,6 +182,7 @@ final class Job
 
     /**
      * @param string $salaryCurrencyCode
+     *
      * @return Job
      */
     public function setSalaryCurrencyCode(string $salaryCurrencyCode) : Job
@@ -196,6 +202,7 @@ final class Job
 
     /**
      * @param string $salaryMin
+     *
      * @return Job
      */
     public function setSalaryMin(string $salaryMin) : Job
@@ -215,6 +222,7 @@ final class Job
 
     /**
      * @param string $salaryMax
+     *
      * @return Job
      */
     public function setSalaryMax(string $salaryMax) : Job
@@ -234,6 +242,7 @@ final class Job
 
     /**
      * @param string $city
+     *
      * @return Job
      */
     public function setCity(string $city) : Job
@@ -253,6 +262,7 @@ final class Job
 
     /**
      * @param string $state
+     *
      * @return Job
      */
     public function setState(string $state) : Job
@@ -272,6 +282,7 @@ final class Job
 
     /**
      * @param string $country
+     *
      * @return Job
      */
     public function setCountry(string $country) : Job
@@ -291,6 +302,7 @@ final class Job
 
     /**
      * @param string $source
+     *
      * @return Job
      */
     public function setSource(string $source) : Job
@@ -310,6 +322,7 @@ final class Job
 
     /**
      * @param \DateTime $date
+     *
      * @return Job
      */
     public function setDate(\DateTime $date) : Job
@@ -329,6 +342,7 @@ final class Job
 
     /**
      * @param string $snippet
+     *
      * @return Job
      */
     public function setSnippet(string $snippet) : Job
@@ -348,6 +362,7 @@ final class Job
 
     /**
      * @param string $description
+     *
      * @return Job
      */
     public function setDescription(string $description) : Job
@@ -367,6 +382,7 @@ final class Job
 
     /**
      * @param string $viewUrl
+     *
      * @return Job
      */
     public function setViewUrl(string $viewUrl) : Job
@@ -386,6 +402,7 @@ final class Job
 
     /**
      * @param string $applyUrl
+     *
      * @return Job
      */
     public function setApplyUrl(string $applyUrl) : Job
@@ -405,6 +422,7 @@ final class Job
 
     /**
      * @param bool $featured
+     *
      * @return Job
      */
     public function setFeatured(bool $featured) : Job
