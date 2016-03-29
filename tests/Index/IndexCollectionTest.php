@@ -1,44 +1,48 @@
 <?php
 
-namespace Jobles\Tests\Core\Job;
+namespace Jobles\Tests\Core\Index;
 
+use Jobles\Core\Index\Index;
+use Jobles\Core\Index\IndexCollection;
 use Jobles\Core\Iterator;
-use Jobles\Core\Job\Job;
-use Jobles\Core\Job\JobCollection;
 
-class JobCollectionTest extends \PHPUnit_Framework_TestCase
+class IndexCollectionTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
-     * @var JobCollection
+     * @var IndexCollection
      */
     private $collection;
 
+    /**
+     * @var Index
+     */
+    private $index;
+
     public function setUp()
     {
-        $this->collection = new JobCollection;
-        $this->job = new Job;
+        $this->collection = new IndexCollection;
+        $this->index = new Index('index_key', 'index_name', 'index_url', 'index_affid');
     }
 
-    public function testAddJobPushJobIntoJobsArray()
+    public function testAddPushInstanceIntoArrayData()
     {
-        $this->collection->add($this->job);
+        $this->collection->add($this->index);
 
-        $this->assertAttributeContains($this->job, 'data', $this->collection);
+        $this->assertAttributeContains($this->index, 'data', $this->collection);
     }
 
     public function testAddJobIncrementsSizeAttribute()
     {
-        $this->collection->add($this->job);
+        $this->collection->add($this->index);
 
         $this->assertAttributeEquals(1, 'size', $this->collection);
     }
 
     public function testPickRetrievesExpectedJob()
     {
-        $this->collection->add($this->job);
+        $this->collection->add($this->index);
 
-        $this->assertEquals($this->job, $this->collection->pick(0));
+        $this->assertEquals($this->index, $this->collection->pick(0));
     }
 
     public function testPickThrowsLengthExceptionOnInvalidPosition()
@@ -52,7 +56,7 @@ class JobCollectionTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(0, $this->collection->count());
 
-        $this->collection->add($this->job);
+        $this->collection->add($this->index);
 
         $this->assertEquals(1, $this->collection->count());
     }
@@ -65,7 +69,7 @@ class JobCollectionTest extends \PHPUnit_Framework_TestCase
     public function testAddShouldThrowInvalidArgumentExceptionWhenAddingInvalidObjectToArrayData()
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('Object is not an instance of ' . Job::class);
+        $this->expectExceptionMessage('Object is not an instance of ' . Index::class);
 
         $this->collection->add(new \stdClass);
     }

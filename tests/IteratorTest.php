@@ -1,16 +1,16 @@
 <?php
 
-namespace Jobles\Tests\Core\Job;
+namespace Jobles\Tests\Core;
 
+use Jobles\Core\Iterator;
 use Jobles\Core\Job\Job;
 use Jobles\Core\Job\JobCollection;
-use Jobles\Core\Job\JobIterator;
 
-class JobIteratorTest extends \PHPUnit_Framework_TestCase
+class IteratorTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
-     * @var JobIterator
+     * @var Iterator
      */
     private $iterator;
 
@@ -20,18 +20,18 @@ class JobIteratorTest extends \PHPUnit_Framework_TestCase
 
         $job = new Job;
         $job->setTitle('Job 1');
-        $jobCollection->addJob($job);
+        $jobCollection->add($job);
 
         $job = new Job;
         $job->setTitle('Job 2');
-        $jobCollection->addJob($job);
+        $jobCollection->add($job);
 
-        $this->iterator = new JobIterator($jobCollection);
+        $this->iterator = new Iterator($jobCollection);
     }
 
     public function testConstructionWithJobCollection()
     {
-        $this->assertAttributeInstanceOf(JobCollection::class, 'jobs', $this->iterator);
+        $this->assertAttributeInstanceOf(JobCollection::class, 'data', $this->iterator);
     }
 
     public function testCurrentGetsFirstJobOnFirstMethodCall()

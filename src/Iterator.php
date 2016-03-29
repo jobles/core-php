@@ -1,8 +1,8 @@
 <?php
 
-namespace Jobles\Core\Job;
+namespace Jobles\Core;
 
-class JobIterator implements \Iterator, \Countable
+final class Iterator implements \Iterator, \Countable
 {
 
     /**
@@ -11,21 +11,21 @@ class JobIterator implements \Iterator, \Countable
     private $position = 0;
 
     /**
-     * @var JobCollection
+     * @var AbstractCollection
      */
-    private $jobs;
+    private $data;
 
-    public function __construct(JobCollection $jobCollection)
+    public function __construct(AbstractCollection $collection)
     {
-        $this->jobs = $jobCollection;
+        $this->data = $collection;
     }
 
     /**
-     * @return Job
+     * @return mixed
      */
-    public function current() : Job
+    public function current()
     {
-        return $this->jobs->pick($this->position);
+        return $this->data->pick($this->position);
     }
 
     /**
@@ -57,7 +57,7 @@ class JobIterator implements \Iterator, \Countable
      */
     public function count() : int
     {
-        return count($this->jobs);
+        return count($this->data);
     }
 
     /**
